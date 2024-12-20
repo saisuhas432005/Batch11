@@ -8,7 +8,7 @@ The objective of this assignment is to practice using Git to collaborate on a sh
 ## **Instructions**
 
 1. Clone the repository provided by the instructor to your local machine.
-2. Create a new branch in GitHub with  `<yourname>` from `git.acad`.
+2. Create a new branch in Local with  `<yourname>` from `git.acad`.
 3. Fetch the newly created branch locally and switch to it.
 4. Create a Folder Called Git
 5. Add new files in the branch to demonstrate your work.
