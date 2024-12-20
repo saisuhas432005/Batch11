@@ -9,12 +9,11 @@ The objective of this assignment is to practice using Git to collaborate on a sh
 
 1. Clone the repository provided by the instructor to your local machine.
 2. Create a new branch in Local with  `<yourname>` from `git.acad`.
-3. Fetch the newly created branch locally and switch to it.
-4. Create a Folder Called Git
-5. Add new files in the branch to demonstrate your work.
-6. Commit your changes with appropriate messages describing your updates.
-7. Push your changes to the newly created branch in the remote repository.
-8. Raise a Pull Request (PR) to the `git.acad` branch for review.
+3. Create a Folder Called Git
+4. Add new files in the branch to demonstrate your work.
+5. Commit your changes with appropriate messages describing your updates.
+6. Push your changes to the newly created branch in the remote repository.
+7. Raise a Pull Request (PR) to the `git.acad` branch for review.
 
 ---
 
