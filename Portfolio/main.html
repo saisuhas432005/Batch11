@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: aliceblue;
+            font-family: Arial, sans-serif;
+        }
+
+        .topbox {
+            display: flex;
+            top: 0;
+            right: 0;
+            left: 0;
+            background-color: aliceblue;
+            padding: 30px 20px;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        .a {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            font-size: 25px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .a a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .b {
+            background-color: rgb(4, 159, 255);
+            padding: 10px 0;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            font-size: 50px;
+            margin-left: 80px;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            font-size: 90px;
+            margin-left: 90px;
+        }
+
+        h3 {
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            font-size: 70px;
+            margin-left: 90px;
+        }
+
+        .icons {
+            background-color: transparent;
+        }
+
+        .icons img {
+            width: 50px;
+            height: 50px;
+            margin-left: 90px;
+        }
+
+        h4 {
+            font-weight: bold;
+            color: black;
+            margin: 0;
+            font-size: 40px;
+            margin-left: 90px;
+        }
+
+        h5 {
+            font-weight: lighter;
+            color: black;
+            margin: 0;
+            font-size: 30px;
+            margin: 10px 100px;
+            line-height: 50px;
+        }
+
+        h6 {
+            font-weight: bold;
+            color: black;
+            margin: 0;
+            font-size: 40px;
+            margin-left: 90px;
+        }
+
+        .skills img {
+            width: 100px;
+            height: 100px;
+            margin-left: 80px;
+        }
+
+        h7 {
+            font-weight: bold;
+            color: black;
+            margin: 0;
+            font-size: 40px;
+            margin-left: 90px;
+        }
+
+        h8 {
+            font-weight: bold;
+            color: black;
+            margin: 0;
+            font-size: 40px;
+            margin-left: 90px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .projects img {
+            width: 40%;
+            border-radius: 20px;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 80px;
+        }
+
+        .other {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 10px;
+        }
+
+        .other img {
+            width: 50px;
+            height: 50px;
+        }
+
+        h9 {
+            color: black;
+            margin: 0;
+            font-size: 35px;
+            margin-left: 100px;
+        }
+
+        h10 {
+            color: black;
+            margin: 0;
+            font-size: 35px;
+            margin-left: 100px;
+        }
+
+        .c {
+            background-color: black;
+            width: 15%;
+            margin-left: 100px;
+            border-radius: 10px;
+        }
+
+        h11 {
+            color: white;
+            font-size: 30px;
+            margin-left: 40px;
+        }
+
+        h12 {
+            font-weight: bold;
+            color: black;
+            margin: 0;
+            font-size: 40px;
+            margin-left: 95px;
+            gap: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(16, 16, 16, 0.822);
+            padding: 15px;
+            color: white;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <div class="topbox">
+        <div class="a">
+            <a href="#about" style="text-decoration: none; color: black;">About</a>
+            <a href="#projects" style="text-decoration: none; color: black;">Projects</a>
+            <a href="#contact" style="text-decoration: none; color: black;">Get in Touch</a>
+        </div>
+    </div>
+    <br><br>
+    <div class="b">
+        <br><br><br>
+        <h1>"Hello, I'm Sai Suhas Sangaraju"</h1>
+        <br><br>
+        <h2>Full Stack Developer</h2>
+        <br><br>
+        <h3>Python and AI Enthusiast</h3>
+        <br><br>
+        <div class="icons">
+            <a href="https://github.com/saisuhas432005">
+                <img src="GitHub.svg">
+            </a>
+            <a href="http://www.linkedin.com/in/saisuhassangaraju">
+                <img src="Linkedin.svg">
+            </a>
+        </div>
+        <br><br>
+    </div>
+    <br><br>
+
+    <!-- Added id for About section -->
+    <div id="about">
+        <h4>About Me</h4>
+        <br>
+        <h5>I am a B.Tech Computer Science and Engineering student at SRM Institute of Science and Technology,
+            passionate
+            about coding, problem-solving, and innovation. I excel in coding challenges, mastering industry-relevant
+            tools,
+            and exploring AI/ML and Data Analytics. Focused on creating impactful solutions, I aim to blend efficient
+            systems with seamless user experiences through dynamic interfaces and robust backend logic.</h5>
+    </div>
+    <br><br>
+
+    <h6>My Expertise</h6>
+    <br><br>
+    <div class="skills">
+        <img src="git logo.png">
+        <img src="git hub logo.png">
+        <img src="html logo.png">
+        <img src="css logo.png">
+        <img src="python logo.png">
+        <img src="js logo.png">
+        <img src="mysql logo.png">
+        <img src="react logo.png">
+        <img src="mongo db logo.png">
+        <img src="redux logo.png">
+        <img src="django logo.png">
+        <img src="docker logo.png">
+        <img src="kubernetes logo.png">
+        <img src="amazon logo.png">
+    </div>
+    <br><br><br>
+
+    <!-- Added id for Projects section -->
+    <div id="projects">
+        <h7>My Projects</h7>
+        <br><br><br>
+        <div class="projects">
+            <img src="ott platform.svg" alt="OTT Platform">
+            <img src="weather app.svg" alt="Weather App">
+            <img src="To do list platform.svg" alt="To-Do List Platform">
+            <img src="calculator.svg" alt="Calculator">
+        </div>
+        <br><br><br>
+        <div class="other">
+            <h8>Other Projects ,</h8>
+            <img src="git hub logo.png" alt="GitHub Logo">
+        </div>
+        <br><br>
+        <h9>ATM/Bank (Deposit/Withdrawal Functions)</h9>
+        <br><br>
+        <h10> Inventory Management</h10>
+    </div>
+    <br><br>
+
+    <!-- Added id for Get in Touch (Contact) section -->
+    <div id="contact">
+        <h12>Additional Details</h12>
+        <br><br>
+        <div style="color: black;margin-left: 95px;font-size: 40px">
+            <p>Certifications</p>
+        </div>
+        <br><br>
+        <div style="color: black;margin-left: 95px;font-size: 40px;font-weight: bold">
+            <p>Contact</p>
+        </div>
+        <br>
+        <div style="color: black;margin-left: 95px;font-size: 30px;line-height: 70px">
+            <p>Sai Suhas Sangaraju</p>
+            <p>Email : suhas.sangaraju@gmail.com</p>
+            <p>Phone : +91 9052359593</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Sai Suhas Sangaraju. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
