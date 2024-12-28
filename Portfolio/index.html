@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,6 +7,7 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -118,27 +120,36 @@
             margin-left: 90px;
         }
 
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: space-evenly;
+            padding: 0 80px;
+        }
+
+        .project-container {
+            text-align: center;
+        }
+
+        .project-container img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .project-container p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
         h8 {
             font-weight: bold;
             color: black;
             margin: 0;
             font-size: 40px;
             margin-left: 90px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .projects img {
-            width: 40%;
-            border-radius: 20px;
-        }
-
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            gap: 80px;
         }
 
         .other {
@@ -153,41 +164,34 @@
             height: 50px;
         }
 
-        h9 {
-            color: black;
-            margin: 0;
-            font-size: 35px;
-            margin-left: 100px;
-        }
-
+        h9,
         h10 {
             color: black;
             margin: 0;
             font-size: 35px;
             margin-left: 100px;
+            line-height: 40px;
         }
 
         .c {
             background-color: black;
             width: 15%;
-            margin-left: 100px;
+            margin: 20px 100px;
             border-radius: 10px;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
         }
 
         .c a {
             text-decoration: none;
             color: white;
-            font-size: 18px;
+            font-size: 15px;
             display: block;
-            margin-right: 35px;
         }
 
-        h11 {
-            color: white;
-            font-size: 30px;
-            margin-left: 40px;
+        .c h11 {
+            margin: 0;
+            text-align: center;
         }
 
         h12 {
@@ -205,6 +209,71 @@
             padding: 15px;
             color: white;
             font-size: 17px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 95px;
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .topbox {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .a {
+                position: static;
+                gap: 10px;
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 50px;
+                margin-left: 20px;
+            }
+
+            h2 {
+                font-size: 30px;
+                margin-left: 20px;
+            }
+
+            h3 {
+                font-size: 25px;
+                margin-left: 20px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
+
+            .contact-info {
+                margin-left: 20px;
+            }
+
+            .contact-info p {
+                font-size: 25px;
+                line-height: 30px;
+            }
+
+            h9,
+            h10 {
+                margin-left: 20px;
+                font-size: 25px;
+            }
+
+            .c {
+                width: 50%;
+            }
         }
     </style>
 </head>
@@ -242,11 +311,10 @@
         <h4>About Me</h4>
         <br>
         <h5>I am a B.Tech Computer Science and Engineering student at SRM Institute of Science and Technology,
-            passionate
-            about coding, problem-solving, and innovation. I excel in coding challenges, mastering industry-relevant
-            tools,
-            and exploring AI/ML and Data Analytics. Focused on creating impactful solutions, I aim to blend efficient
-            systems with seamless user experiences through dynamic interfaces and robust backend logic.</h5>
+            passionate about coding, problem-solving, and innovation. I excel in coding challenges, mastering
+            industry-relevant tools, and exploring AI/ML and Data Analytics. Focused on creating impactful solutions, I
+            aim to blend efficient systems with seamless user experiences through dynamic interfaces and robust backend
+            logic.</h5>
     </div>
     <br><br>
 
@@ -272,24 +340,25 @@
     <div id="projects" style="padding-top: 100px; margin-top: -100px;">
         <h7>My Projects</h7>
         <br><br>
-        <div style="font-size: 20px;margin-left: 100px;justify-content:space-between;display:flex;margin-right: 37%">
-            <p>OTT Platform</p>
-            <p>Weather App</p>
-        </div>
         <div class="projects">
-            <img src="ott platform.svg" alt="OTT Platform">
-            <img src="weather app.svg" alt="Weather App">
+            <div class="project-container">
+                <img src="ott platform.svg" alt="OTT Platform">
+                <p>OTT Platform</p>
+            </div>
+            <div class="project-container">
+                <img src="weather app.svg" alt="Weather App">
+                <p>Weather App</p>
+            </div>
+            <div class="project-container">
+                <img src="To do list platform.svg" alt="To-Do List Platform">
+                <p>To Do List Platform</p>
+            </div>
+            <div class="project-container">
+                <img src="calculator.svg" alt="Calculator">
+                <p>Calculator</p>
+            </div>
         </div>
         <br><br>
-        <div style="font-size: 20px;margin-left: 100px;justify-content:space-between;display:flex;margin-right: 37%">
-            <p>To Do List Platform</p>
-            <p>Calculator</p>
-        </div>
-        <div class="projects">
-            <img src="To do list platform.svg" alt="To-Do List Platform">
-            <img src="calculator.svg" alt="Calculator">
-        </div>
-        <br><br><br>
         <div class="other">
             <h8>Other Projects ,</h8>
             <img src="git hub logo.png" alt="GitHub Logo">
@@ -298,12 +367,12 @@
         <h9>ATM/Bank (Deposit/Withdrawal Functions)</h9>
         <br><br>
         <h10> Inventory Management</h10>
-    </div>
-    <br><br>
-    <div class="c">
-        <a href="https://drive.google.com/file/d/16mxVX1jmxsH7NTAu3uqpx_u0rnCwah9t/view?usp=sharing" show resume>
-            <h11>My Resume</h11>
-        </a>
+        <br>
+        <div class="c">
+            <a href="https://drive.google.com/file/d/16mxVX1jmxsH7NTAu3uqpx_u0rnCwah9t/view?usp=sharing">
+                <h11>My Resume</h11>
+            </a>
+        </div>
     </div>
     <br><br>
     <div id="contact" style="padding-top: 100px; margin-top: -100px;">
@@ -312,12 +381,11 @@
         <div style="color: black;margin-left: 95px;font-size: 40px">
             <p>Certifications</p>
         </div>
-        <br><br>
-        <div style="color: black;margin-left: 95px;font-size: 40px;font-weight: bold">
-            <p>Contact</p>
-        </div>
         <br>
-        <div style="color: black;margin-left: 95px;font-size: 30px;line-height: 70px">
+        <img src="certificate.png" alt="Certificate" style="width: 30%;height: 80%;margin-left: 95px;">
+        <br><br>
+        <div class="contact-info">
+            <p>Contact :</p>
             <p>Sai Suhas Sangaraju</p>
             <p>Email : suhas.sangaraju@gmail.com</p>
             <p>Phone : +91 9052359593</p>
