@@ -23,6 +23,8 @@
             background-color: aliceblue;
             padding: 25px 30px;
             position: fixed;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 10;
         }
 
         .a {
@@ -38,11 +40,17 @@
         .a a {
             text-decoration: none;
             color: black;
+            transition: color 0.3s ease;
+        }
+
+        .a a:hover {
+            color: rgb(4, 159, 255);
         }
 
         .b {
             background-color: rgb(4, 159, 255);
             padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
@@ -51,6 +59,11 @@
             margin: 0;
             font-size: 70px;
             margin-left: 80px;
+            transition: transform 0.3s ease;
+        }
+
+        h1:hover {
+            transform: scale(1.05);
         }
 
         h2 {
@@ -77,6 +90,11 @@
             width: 50px;
             height: 50px;
             margin-left: 90px;
+            transition: transform 0.3s ease;
+        }
+
+        .icons img:hover {
+            transform: scale(1.2);
         }
 
         h4 {
@@ -108,6 +126,12 @@
             width: 100px;
             height: 100px;
             margin-left: 80px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skills img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         h7 {
@@ -128,6 +152,12 @@
 
         .project-container {
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .project-container img {
@@ -160,6 +190,11 @@
         .other img {
             width: 50px;
             height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .other img:hover {
+            transform: rotate(10deg);
         }
 
         h9,
@@ -178,6 +213,11 @@
             border-radius: 10px;
             text-align: center;
             padding: 15px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .c:hover {
+            background-color: rgb(4, 159, 255);
         }
 
         .c a {
@@ -207,6 +247,11 @@
             padding: 15px;
             color: white;
             font-size: 17px;
+            transition: background-color 0.3s ease;
+        }
+
+        footer:hover {
+            background-color: rgba(32, 32, 32, 0.9);
         }
 
         .contact-info {
@@ -222,7 +267,7 @@
             line-height: 40px;
         }
 
-        @media (max-width:600px) {
+        @media (max-width:300px) {
             .topbox {
                 flex-direction: column;
                 align-items: center;
@@ -268,13 +313,13 @@
             }
 
             h9 {
-                font-size: 20px;
+                font-size: 10px;
                 margin-left: 70px;
             }
 
             h10 {
                 margin-left: 70px;
-                font-size: 20px;
+                font-size: 10px;
             }
 
             .c {
