@@ -38,13 +38,17 @@
         .a a {
             text-decoration: none;
             color: black;
+            transition: color 0.3s;
+        }
+
+        .a a:hover {
+            color: #4CAF50;
+            /* Change color on hover */
         }
 
         .b {
-            background: linear-gradient(90deg, #8e44ad, #3498db);
-            text-align: center;
-            color: white;
-            padding: 100px 20px 50px;
+            background-color: rgb(4, 159, 255);
+            padding: 10px 0;
         }
 
         h1 {
@@ -79,6 +83,12 @@
             width: 50px;
             height: 50px;
             margin-left: 90px;
+            transition: transform 0.3s;
+        }
+
+        .icons img:hover {
+            transform: scale(1.1);
+            /* Slightly enlarge on hover */
         }
 
         h4 {
@@ -110,6 +120,12 @@
             width: 100px;
             height: 100px;
             margin-left: 80px;
+            transition: transform 0.3s;
+        }
+
+        .skills img:hover {
+            transform: scale(1.1);
+            /* Slightly enlarge on hover */
         }
 
         h7 {
@@ -130,6 +146,12 @@
 
         .project-container {
             text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .project-container:hover {
+            transform: scale(1.05);
+            /* Slightly enlarge on hover */
         }
 
         .project-container img {
@@ -137,6 +159,12 @@
             max-width: 300px;
             height: auto;
             border-radius: 20px;
+            transition: transform 0.3s;
+        }
+
+        .project-container img:hover {
+            transform: scale(1.05);
+            /* Slightly enlarge image on hover */
         }
 
         .project-container p {
@@ -180,6 +208,7 @@
             border-radius: 10px;
             text-align: center;
             padding: 15px 0;
+            transition: background-color 0.3s;
         }
 
         .c a {
@@ -187,6 +216,11 @@
             color: white;
             font-size: 15px;
             display: block;
+        }
+
+        .c:hover {
+            background-color: #333;
+            /* Darken the background on hover */
         }
 
         .c h11 {
